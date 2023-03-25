@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a class="nav-header" href="home_page.html">dfashion.outfit</a></li>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="my_Style.html">My Style</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li>
+                    <p id="userLogin">No Name</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form class="form-input" action="" method="get">
+                <label for="nama"><b>Nama</b></label>
+                <input type="text" id="nama" name="nama" placeholder="Masukan Nama" required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" id="email" name="email" placeholder="Masukan Email" required>
+                <div class="form-group">
+                    <input type="radio" id="pria" name="jenis-kelamin" value="Pria">
+                    <label for="pria">Pria</label><br>
+                    <input type="radio" id="wanita" name="jenis-kelamin" value="Wanita">
+                    <label for="wanita">Wanita</label><br>
+                </div>
+                <label for="jenis-kontak"><b>Jenis Kontak</b></label>
+                <select id="jenis-kontak" name="jenis-kontak">
+                    <option value="Keluhan">Keluhan</option>
+                    <option value="Tanya Barang">Tanya Barang</option>
+                </select>
+                <label for="pesan"><b>Pesan</b></label>
+                <textarea id="pesan" name="pesan" cols="30" rows="5"></textarea>
+            </form>
+            <button onclick="saveKontak()">Kirim</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Our Website. All rights reserved.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

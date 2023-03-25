@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Register Page</h1>
+        <form class="form-input" action="" method="get">
+            <label for="nama"><b>Nama</b></label>
+            <input id="nama" type="text" name="nama" placeholder="Masukkan Nama" required>
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="email" name="email" placeholder="Masukkan Email" required>
+            <label for="password"><b>Password</b></label>
+            <input id="password" type="password" name="password" id="pass-login" placeholder="Masukkan Password"
+                required>
+            <label for="konfirmasi"><b>Konfirmasi Password</b></label>
+            <input id="konfirmasi" type="password" name="konfirmasi" id="pass-login" placeholder="Masukkan Password"
+                required>
+            <p>Sudah punya akun?
+                <a href="/index.html">Login</a>
+            </p>
+        </form>
+        <div class="center">
+            <button onclick="register()">Register</button>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
